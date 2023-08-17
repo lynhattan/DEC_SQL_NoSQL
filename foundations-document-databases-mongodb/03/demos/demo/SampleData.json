@@ -1,0 +1,31 @@
+{
+    "DisplayName": "Pinal Dave",
+    "UserName": "pinaldave",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Performance Tuning",
+        "isManager": "false"
+    },
+    "Programming Languages": ["T-SQL", "JavaScript", "HTML"]
+}
+{
+    "DisplayName": "Jason Brown",
+    "UserName": "jasonbrown",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Performance Tuning",
+        "isManager": "true"
+    },
+    "Programming Languages": ["T-SQL", "JavaScript", "HTML"]
+}
+{
+    "DisplayName": "Mark Smith",
+    "UserName": "marksmith",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Development",
+        "isManager": "false",
+	"YearsExp":{"$numberInt":"5"}
+    },
+    "Programming Languages": ["T-SQL", "JavaScript"]
+}

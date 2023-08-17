@@ -1,0 +1,38 @@
+[
+    {
+        "first_name": "John",
+        "last_name": "Doe",
+        "city": "Nashville",
+        "state": "TN"
+    },
+    {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "city": "Nashville",
+        "state": "TNT"
+    },
+    {
+        "first_name": "Joe",
+        "last_name": "Doe",
+        "city": "Memphis",
+        "state": "TN"
+    },
+    {
+        "first_name": "Jill",
+        "last_name": "Doe",
+        "city": "Somewhere",
+        "state": "ZA"
+    },
+    {
+        "first_name": "Janice",
+        "last_name": "Doe",
+        "city": "Knoxville",
+        "state": "Tennessee"
+    },
+    {
+        "first_name": "Juan",
+        "last_name": "Doe",
+        "city": "Chattnooga",
+        "state": "Tenn."
+    }
+]

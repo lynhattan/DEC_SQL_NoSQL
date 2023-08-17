@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "mongo01",
+        "title": "MongoDB Conference",
+        "ticket_cost": "250",
+        "topics": ["mongodb", "javascript"],
+        "attendee_count": 0
+    },
+    {
+        "_id": "javascript01",
+        "title": "JavaScript Conference",
+        "ticket_cost": "500",
+        "topics": ["web", "javascript"],
+        "attendee_count": 0
+    },
+    {
+        "_id": "python01",
+        "title": "Python Conference",
+        "ticket_cost": "1000",
+        "topics": ["web", "python"],
+        "attendee_count": 0
+    }
+]

@@ -1,0 +1,29 @@
+/*We will be using sample_mflix database.*/
+/* All the operator details: 
+https://docs.mongodb.com/manual/reference/operator/query/ */
+
+{}
+{runtime: 11}
+
+{ runtime: {$eq: 11}}
+
+{ runtime: {$gt: 11}}
+
+{ runtime: {$lt: 11}}
+
+{ cast: "Billy Bletcher"}
+
+{"awards.wins":3}
+
+{$and: [{ runtime: {$gt: 80}}, {"awards.wins":3}]}
+
+{$and: [ {"awards.wins":3}, { runtime: {$gt: 80}},]}
+
+{$or: [{"awards.wins":3},{ runtime: {$gt: 80}}]}
+
+{$or: [{ runtime: {$gt: 80}},{"awards.wins":3}]}
+
+{title:1,runtime:1, "awards.wins":1, _id:0}
+{title:1}
+limit( 5 )
+

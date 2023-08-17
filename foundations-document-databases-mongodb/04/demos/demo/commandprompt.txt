@@ -1,0 +1,32 @@
+/*Connect to MongodB Atlast
+Use your servername and username/password
+*/
+mongo "YourConnectionString"  --username newuser --password newpassword
+
+/*Create Database*/
+use sample_mflix
+
+/* Read from the collection*/
+db.movies.find( {} )
+
+db.movies.find( {} ).pretty()
+
+db.movies.find( {runtime: 11} ).pretty()
+
+db.movies.find( {runtime: 11} ).pretty().limit(3)
+
+db.movies.find( {runtime: 11}, {title:1} ).pretty().limit(3)
+
+db.movies.find( {runtime: 11}, {runtime:1, title:1, _id:0} ).pretty().limit(3)
+
+db.movies.find( {runtime: {$eq: 11}}, {runtime:1, title:1, _id:0} ).pretty().limit(5).sort({title: 1})
+
+db.movies.find( {runtime: {$eq: 11}}, {runtime:1, title:1, _id:0} ).pretty().limit(5).sort({title: -1})
+
+db.movies.find( {runtime: {$eq: 11}}, {runtime:1, title:1, _id:0} ).pretty().limit(5).sort({title: -1}).readConcern("majority")
+
+db.movies.find( {runtime: {$eq: 11}}, {runtime:1, title:1, _id:0} ).pretty().limit(5).sort({title: -1}).readConcern("linearizable").maxTimeMS(10000)
+
+
+db.movies.find( {runtime: {$gt: 1}}, {runtime:1, title:1, _id:0} ).pretty().limit(300).readConcern("linearizable").maxTimeMS(10000)
+

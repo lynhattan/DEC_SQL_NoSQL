@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <p><strong>Title</strong></p>
+        </div>
+        <div class="col-md">
+            <p>{{ conference.title }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p><strong>Ticket Cost</strong></p>
+        </div>
+        <div class="col-md">
+            <p>{{ conference.ticket_cost }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p><strong>Attendees</strong></p>
+        </div>
+        <div class="col-md">
+            <p>{{ conference.attendee_count }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md">
+            <p><strong>Topics</strong></p>
+        </div>
+        <div class="col-md">
+            <p>
+                {{ conference.topics|join(', ')}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <a href="/register/{{ conference._id}}" class="btn btn-secondary">Register</a>
+    </div>
+</div>
+
+{% endblock %}

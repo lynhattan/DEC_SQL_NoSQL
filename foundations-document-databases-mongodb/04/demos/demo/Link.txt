@@ -1,0 +1,2 @@
+All the operator details: 
+https://docs.mongodb.com/manual/reference/operator/query/ 

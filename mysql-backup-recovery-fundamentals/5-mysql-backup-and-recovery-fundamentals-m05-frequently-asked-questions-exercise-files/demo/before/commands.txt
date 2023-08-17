@@ -1,0 +1,103 @@
+-- Check the status of log file
+
+SHOW BINARY LOGS;
+
+
+
+SHOW MASTER STATUS;
+
+
+-- Change Path to your folder where mysql.exe is located
+-- C:\Program Files\MySQL\MySQL Server 5.6\bin
+
+-- Take full backup
+mysqldump -h 127.0.0.1 -u root -p sakila > c:\backup\sakilabackup.sql
+
+-- 
+
+SELECT payment_id
+
+FROM `sakila`.`payment`;
+
+-- 
+
+USE sakila;
+
+
+-- Normal Delete
+DELETE FROM sakila.payment
+
+WHERE payment_id = 1; 
+
+-- Normal Delete
+DELETE FROM sakila.payment
+
+WHERE payment_id = 2; 
+
+-- Normal Delete
+DELETE FROM sakila.payment
+
+WHERE payment_id = 3; 
+
+-- Accident
+DELETE FROM sakila.payment
+
+WHERE payment_id = 11; 
+
+-- Normal Delete
+DELETE FROM sakila.payment
+
+WHERE payment_id = 12; 
+
+SELECT payment_id
+
+FROM `sakila`.`payment`;
+
+
+-- Check the status of log file
+
+SHOW BINARY LOGS;
+
+
+
+SHOW MASTER STATUS;
+
+
+-- Take Log File Backup
+
+mysqlbinlog "C:\ProgramData\MySQL\MySQL Server 5.6\data\BIG-bin.000055" > c:\backup\logfile.sql
+
+-- Restore 
+mysql -h localhost -u root -p sakila< c:\backup\sakilabackup.sql
+
+-- 
+
+SELECT payment_id
+
+FROM `sakila`.`payment`;
+
+--
+
+mysql -h localhost -u root -p sakila < c:\backup\logfile.sql
+
+--
+
+SELECT payment_id
+
+FROM `sakila`.`payment`;
+
+--
+
+mysqlbinlog --stop-datetime="2014-04-17 22:15:33" "C:\ProgramData\MySQL\MySQL Server 5.6\data\BIG-bin.000055" | mysql -u root -p
+
+--
+
+SELECT payment_id
+
+FROM `sakila`.`payment`;
+
+-- ---------------------------------------------------------------------------------------
+
+
+
+

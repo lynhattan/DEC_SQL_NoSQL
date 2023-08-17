@@ -1,0 +1,49 @@
+[
+    {
+        "title": "MongoDB Conference",
+        "topics": ["javascript", "mongodb", "data"],
+        "ticket_cost": 500
+    },
+    {
+        "title": "Angular Conference",
+        "topics": ["typescript", "angular", "web"]
+        ,
+        "ticket_cost": -450
+    },
+    {
+        "title": "Django Conference",
+        "topics": ["python", "django", "web"]
+        ,
+        "ticket_cost": -400
+    },
+    {
+        "title": "Perl Conference",
+        "topics": ["perl", "old", "unix"],
+        "ticket_cost": 350
+    },
+    {
+        "title": "AWK Conference",
+        "topics": ["awk", "unix"],
+        "ticket_cost": 300
+    },
+    {
+        "title": "Smalltalk Conference",
+        "topics": ["smalltalk", "old", "object-oriented"],
+        "ticket_cost": 250
+    },
+    {
+        "title": "Kotlin Conference",
+        "topics": ["java", "kotlin", "android"],
+        "ticket_cost": -400
+    },
+    {
+        "title": "Swift Conference",
+        "topics": ["swift", "ios", "mobile"],
+        "ticket_cost": -550
+    },
+    {
+        "title": "Xamarin Conference",
+        "topics": ["ios", "android", "csharp"],
+        "ticket_cost": -500
+    }
+]

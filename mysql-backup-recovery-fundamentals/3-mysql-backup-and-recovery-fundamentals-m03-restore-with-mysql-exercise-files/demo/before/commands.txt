@@ -1,0 +1,12 @@
+Change Path to your folder where mysql.exe is located
+C:\Program Files\MySQL\MySQL Server 5.6\bin
+
+Scenario 1: 
+In Workbench: 
+CREATE DATABASE sakilaindia;
+
+On Command Prompt: 
+mysql -h localhost -u root -p sakilaindia < c:\backup\sakilabackup.sql
+
+Scenario 2: 
+mysql -h localhost -u root -p < c:\backup\AllDBbackup.sql

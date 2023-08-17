@@ -1,0 +1,64 @@
+[
+    {
+        "_id": "mongoconf",
+        "title": "MongoDB Conference",
+        "attendees": 800,
+        "ticket_cost": 450,
+        "ratings": [
+            10,
+            8,
+            10,
+            7,
+            10,
+            7,
+            5,
+            8
+        ]
+    },
+    {
+        "_id": "jsconf",
+        "title": "JavaScript Conference",
+        "attendees": 300,
+        "ticket_cost": 200,
+        "ratings": [
+            6,
+            1,
+            5,
+            1,
+            5,
+            4,
+            2,
+            9
+        ]
+    },
+    {
+        "_id": "pyconf",
+        "title": "Python Conference",
+        "attendees": 325,
+        "ticket_cost": 300,
+        "ratings": [
+            6,
+            7,
+            6,
+            8,
+            6,
+            10,
+            3,
+            6
+        ]
+    },
+    {
+        "_id": "dataconf",
+        "title": "Database Conference",
+        "attendees": 825,
+        "ticket_cost": 250,
+        "ratings": [
+            7,
+            3,
+            2,
+            7,
+            4,
+            2
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+Change Path to your folder where mysqldump.exe is located
+C:\Program Files\MySQL\MySQL Server 5.6\bin
+
+Scenario 1: 
+mysqldump -h 127.0.0.1 -u root -p sakila > c:\backup\sakilabackup.sql
+
+Scenario 2: 
+mysqldump -h 127.0.0.1 -u root -p --database sakila world > c:\backup\TwoDBbackup.sql
+
+Scenario 3: 
+mysqldump -h 127.0.0.1 -u root -p --all-database > c:\backup\AllDBbackup.sql
+
+Scenario 4: 
+mysqldump -h 127.0.0.1 -u root -p --database sakila --tables rental > c:\backup\RentalTablebackup.sql
+
+Scenario 5: 
+mysqldump -h 127.0.0.1 -u root -p --database sakila --routines --no-create-info --no-data --no-create-db --skip-opt > c:\backup\SPbackup.sql

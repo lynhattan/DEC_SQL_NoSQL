@@ -1,0 +1,81 @@
+/*Connect to MongodB Atlast
+Use your servername and username/password
+*/
+mongo "YourConnectionString"  --username newuser --password newpassword
+
+/*Create Database*/
+use sqlauthority
+
+/* Show dbs */
+show dbs
+
+/* Show current Db */
+db
+
+/* create collection */
+db.createCollection("newusers")
+
+/* show collection */
+show collections
+
+/* insert single document */
+db.newusers.insertOne(
+{
+    "DisplayName": "Pinal Dave",
+    "UserName": "pinaldave",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Performance Tuning",
+        "isManager": "false"
+    },
+    "Programming Languages": ["T-SQL", "JavaScript", "HTML"]
+}
+)
+
+
+/* Read from the collection*/
+db.newusers.find( {} )
+
+db.newusers.find( {} ).pretty()
+
+/* insert multiple document */
+db.newusers.insertMany(
+[
+{
+    "DisplayName": "Pinal Dave",
+    "UserName": "pinaldave",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Performance Tuning",
+        "isManager": "false"
+    },
+    "Programming Languages": ["T-SQL", "JavaScript", "HTML"]
+},
+{
+    "DisplayName": "Jason Brown",
+    "UserName": "jasonbrown",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Performance Tuning",
+        "isManager": "true"
+    },
+    "Programming Languages": ["T-SQL", "JavaScript", "HTML"]
+},
+{
+    "DisplayName": "Mark Smith",
+    "UserName": "marksmith",
+    "Job": {
+        "Title": "DBA",
+        "Area": "Database Development",
+        "isManager": "false",
+	"YearsExp":{"$numberInt":"5"}
+    },
+    "Programming Languages": ["T-SQL", "JavaScript"]
+}
+]
+)
+
+/* Read from the collection*/
+db.newusers.find( {} )
+
+db.newusers.find( {} ).pretty()

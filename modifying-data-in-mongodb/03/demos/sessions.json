@@ -1,0 +1,103 @@
+[
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 101",
+        "topic": "javascript",
+        "room": "Abalone"
+    },
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 102",
+        "topic": "javascript",
+        "room": "Abalone"
+    },
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 103",
+        "topic": "javascript",
+        "room": "Abalone"
+    },
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 104",
+        "topic": "javascript",
+        "room": "Abalone"
+    },
+    {
+        "session_type": "lecture",
+        "title": "TypeScript 101",
+        "topic": "typescript",
+        "room": "Barracuda"
+    },
+    {
+        "session_type": "lecture",
+        "title": "TypeScript 102",
+        "topic": "typescript",
+        "room": "Barracuda"
+    },
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 101",
+        "topic": "javascript",
+        "room": "Barracuda"
+    },
+    {
+        "session_type": "lecture",
+        "title": "JavaScript 102",
+        "topic": "javascript",
+        "room": "Barracuda"
+    },
+    {
+        "session_type": "lecture",
+        "title": "MongoDB 101",
+        "topic": "mongodb",
+        "room": "Carp"
+    },
+    {
+        "session_type": "lecture",
+        "title": "MongoDB 102",
+        "topic": "mongodb",
+        "room": "Carp"
+    },
+    {
+        "session_type": "lecture",
+        "title": "MongoDB 103",
+        "topic": "mongodb",
+        "room": "Carp"
+    },
+    {
+        "session_type": "lecture",
+        "title": "MongoDB 104",
+        "topic": "mongodb",
+        "room": "Carp"
+    },
+    {
+        "session_type": "workshop",
+        "title": "MongoDB Workshop",
+        "topic": "mongodb",
+        "room": "Abalone",
+        "seats": 50,
+        "registered": 53
+    },
+    {
+        "session_type": "workshop",
+        "title": "JavaScript Workshop",
+        "topic": "javascript",
+        "room": "Carp",
+        "seats": 40,
+        "registered": 25
+    },
+    {
+        "session_type": "workshop",
+        "title": "TypeScript Workshop",
+        "topic": "typescript",
+        "room": "Barracuda",
+        "seats": 35,
+        "registered": 35
+    },
+    {
+        "title": "Perl 104",
+        "topic": "perl",
+        "room": "Carp"
+    }
+]
