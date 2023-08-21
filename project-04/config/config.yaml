@@ -1,0 +1,29 @@
+api_tiki: "https://tiki.vn/api/v2/products/"
+
+headers: { 
+  "Accept": "application/json, text/plain, */*",
+  "Accept-Encoding": "gzip, deflate, br",
+  "Accept-Language": "en-US,en;q=0.5",
+  "Alt-Used": "tiki.vn",
+  "Connection": "keep-alive",
+  "Cookie": "_trackity=62bd2e19-1f1f-d6bd-c64e-c5e7d52797f3; amp_99d374=lgKTfi6ogCN0EeIgoqP8b1...1h6nsnmmi.1h6nu6tjo.aq.cs.nm; _ga=GA1.1.684350040.1690771394; _gcl_au=1.1.1132507067.1690771395; _hjSessionUser_522327=eyJpZCI6IjM4ZjQ2ZmEyLTdhZGYtNTM1MC04ZmQxLWNlNjU5OTQwOGFlOSIsImNyZWF0ZWQiOjE2OTA3NzEzOTY0OTAsImV4aXN0aW5nIjp0cnVlfQ==; _fbp=fb.1.1690771396551.943067512; __iid=749; __iid=749; __su=0; __su=0; _ga_GSD4ETCY1D=GS1.1.1690871540.4.1.1690873086.60.0.0; cto_bundle=g9EWFl9EOXNCaG5BNDdsRXRHJTJGd1glMkZNZkxSNzElMkZ2V1ZFOVhNU0RUWnZaY05za1pOd2plOHJBJTJCMXJxSlpqZUlrY09DWHg3eiUyQmUlMkJwSlRHN0o5VUNnZDNONHNOY3BkbDRrWFdZdFc5MGpQM1YyekYzJTJCNFBTc3o3d0dHcnlIYzB1Q2h4cWIxbjIxQkVlaXo5Q0lURVR1NnRGREZFQSUzRCUzRA; TOKENS={%22access_token%22:%22EUueyrbH5kdowAJvaYC0NVFhL9xMWX7i%22}; _gid=GA1.2.335020908.1690858570; delivery_zone=Vk4wMzkwMTUwMDg=; tiki_client_id=684350040.1690771394; _hjIncludedInSessionSample_522327=0; _hjSession_522327=eyJpZCI6IjhkOGZjMzI4LWIxNzgtNDQ3OC05MDg1LTlmMDE1NzdlOGRiOCIsImNyZWF0ZWQiOjE2OTA4NzE1Mzk2NzQsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0",
+  "Host": "tiki.vn",
+  "Referer": "https://tiki.vn/",
+  "Sec-Fetch-Dest": "empty",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Site": "same-origin",
+  "TE": "trailers",
+  "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",
+  "x-guest-token": "EUueyrbH5kdowAJvaYC0NVFhL9xMWX7i"
+  }
+
+params: {
+  "limit": 50,
+  "include": "advertisement",
+  "aggregations": 2,
+  "version": "home-persionalized",
+  "trackity_id":"62bd2e19-1f1f-d6bd-c64e-c5e7d52797f3",
+  "category": None,
+  "page": None,
+  "urlKey": None
+}
